@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WoW</title>
+    <style>
+.p {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bold;
+    color: #ffffff;
+    text-decoration: none;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+.header {
+     width: 100%;
+    background-color: none;
+    font-size: 30px;
+}
+.bar {
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    gap: 7em;
+    justify-content: center;
+}
+.main {
+    width: 100%;
+}
+.mainText {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bold;
+    color: aliceblue;
+    margin-bottom: -50px;
+    width: 50%;
+    text-align: center;
+    display: block;
+    margin: auto;
+}
+.zhest {
+    width: 100%;
+}
+.main button {
+    display: block;
+    margin: auto;
+    color: aliceblue;
+    border-radius: 12px;
+    border-color: crimson;
+    background-color: crimson;
+    font-size: 3em;
+    font-weight: bold;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding: 0.3em;
+    margin-top: 35px;
+}
+.bg {
+    background-size: 100% 100%;
+    background-image: url(mark-cruz-VW2oU66mwbc-unsplash.jpg);
+    position: relative;
+    object-fit: cover;
+
+}
+.gg {
+    padding: 20px;
+    left: 0;
+    right: 0;
+    background-image: url(ton.jpg);
+    background-size: 100% 100%;
+}
+.gg h1 {
+    display: block;
+    margin: auto;
+    width: 80%;
+    text-align: center;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.gg div {
+    padding: 20px;
+    margin: auto;
+    width: 80%;
+    display: grid;
+    gap: 20px;
+    justify-content: center;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: 10% auto;
+}
+.gg div div {
+    overflow: hidden;
+    display: grid;
+    justify-content: center;
+    grid-template-columns: auto;
+    text-align: left;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+    background-color: none;
+    color: white;
+}
+.gg div div h1 {
+    overflow: hidden;
+    color: white;
+}
+.advert {
+    width: 100%;
+    background-color: antiquewhite;
+    height: 600px;
+}
+.advert button {
+    display: inline-flex;
+    margin: auto;
+    color: aliceblue;
+    border-radius: 10px;
+    border-color: crimson;
+    background-color: crimson;
+    font-weight: bold;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding: 0.3em 0.3em;
+    gap: 4em;
+    align-items: center;
+     width: 5.2%;
+}
+.ali {
+    align-items: center;
+    font-style: normal;
+    font-weight: bold;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: lightpink;
+}
+.functions {
+    background-color: blanchedalmond;
+}
+.functions form label {
+    width: 15%;
+    color: white;
+    padding: 12px;
+    transition: .1s;
+}
+
+.functions form, input {
+    display: inline-block;
+    margin: auto;
+}
+
+.functions form {
+    display: flex;
+    justify-content: center;
+}
+
+.functions form label {
+    transition: .1s;
+    background-color: purple
+}
+
+.functions form label:hover {
+    background-color:rebeccapurple
+}
+
+.functions form input[type="radio"] {
+    opacity: 0;
+    position: fixed;
+    width: 0;
+}
+
+.functions form input[type="radio"]:checked + label {
+    color: black;
+    background-color: darkcyan;
+}
+
+.functions form input[type="radio"]:checked + label + table {
+    opacity: 1;
+    background-color: darkkhaki;
+}
+
+.functions form table {
+    width: 65%;
+    margin-top: 42px;
+    transition: .1s;
+    opacity: 0;
+    position: absolute;
+    border: 1px solid  black;
+}
+
+.functions form table tr, td {
+    border: 1px solid black;
+    padding: 6px; 
+    background-color: darkkhaki; 
+}
+.mainTextr {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bold;
+    color: aliceblue;
+    padding-left: 450px;
+    margin-bottom: -25px;
+    width: 50%;
+    text-align: center;
+    display: block;
+}
+@media only screen and (max-width: 320px){
+    .mainText {
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-weight: bold;
+        color: aliceblue;
+        font-size: 18px;
+        padding-left: 0px;
+        width: 100%;
+    }
+    .element.style {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+    .bar {
+        display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    max-width: 1500px;
+    font-size: 15px;
+    gap: 10px;
+    padding-left: 0px;
+    }
+    .main button {
+    display: block;
+    margin: auto;
+    color: aliceblue;
+    border-radius: 12px;
+    border-color: crimson;
+    background-color: crimson;
+    font-size: 2em;
+    font-weight: bold;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding: 0.1em;
+    margin-top: 30px;
+}
+.mainTextr {
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-weight: bold;
+        color: aliceblue;
+        font-size: 18px;
+        padding-left: 0px;
+        width: 100%;
+    }
+    .gg div div {
+    overflow: hidden;
+    display: grid;
+    justify-content: center;
+    grid-template-columns: auto;
+    text-align: left;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    background-color: none;
+    color: white;
+    font-size: 13px;
+}
+.gg div {
+    margin: auto;
+    width: 100%;
+    display: grid;
+    gap: 20px;
+    justify-content: center;
+    grid-template-columns: none;
+    grid-template-rows: none;
+    padding: 0px;
+}
+.functions form table {
+    width: 90%;
+    margin-top: 60px;
+    transition: .1s;
+    opacity: 0;
+    position: absolute;
+    border: 1px solid  black;
+}
+
+}
+
+    </style>
+</head>
+<div class="bg">
+<div class="header">
+    <div class="bar">
+        <a class="p" href="index.html">Warcraft</a>
+    <a class="p" href="index.html">F.A.Q</a>
+    <a class="p" href="index.html">Main</a>
+    <a class="p" href="index.html">Call us</a>
+    <a class="p" href="index.html">About us</a>
+    </div>
+</div>
+<div class="main">
+    <h1 class="mainText">Welcome to a world where gaming desires become reality, and where every gamer is the architect of their own era of avventure. Welcome to Warcraft: Platform of Dreams, a uniqe gaming space that was born from the most cherished wishes of our passionate fans. Here, every click, every request, and every inspired gaze results in the creation of the amazing worlds you've dreamed of us. Let's immerse together in this magical landscape where the boundaries between reality and virtuality merge into a continuos adventure created together with you, our heroes.</h1>
+    <div>
+    <button>Download</button>
+</div>
+    <h1 class="mainTextr" align="center">win-win-win for developers, advertisers, players</h1>
+</div>
+</div>
+<div class="zhest">
+    <div style="margin-top: 25px;" class="gg" id="games">
+        <h1>Play with us!</h1>
+        <div>
+            <div>
+                <h1>Hearthstone</h1>
+                <p>Hearthstone is an online card game developed by Blizzard Entertainment. Players collect a deck of cards representing characters, spells and creatures from the World of Warcraft universe. They then battle each other using these cards to achieve the goal of reducing their opponent's health to zero. The game features several modes including single player battles, playing against other players, and various event modes. Hearthstone also has a collectible aspect where players can unlock new cards or create their own decks. Hearthstone is popular for its simplicity, colorful graphics and strategic depth, making it appealing to a wide range of players, from beginners to experienced gamers.</p>
+            </div>
+            <div>
+                <h1>Warcraft</h1>
+                <p>Warcraft is a fantasy universe created by Blizzard Entertainment. It includes several video games, books, movies, and other media works. The main games in the series are Real-Time Strategy (RTS) games such as Warcraft: Orcs & Humans, Warcraft II, Warcraft III, and the online game World of Warcraft (MMORPG). The plot of Warcraft is set in the fictional world of Azeroth, where there are various races such as humans, orcs, elves, undead, and others. The central theme is conflict and cooperation between these races in the struggle for power, survival and defense of their kingdoms. Warcraft also has a rich history and characters that have become legends in the video game and fantasy world. This universe continues to evolve and expand with the release of new content updates and products.</p>
+            </div>
+            <div>
+                <h1>Diablo</h1>
+                <p>Diablo is a series of action RPG (role-playing game with action elements) computer games developed by Blizzard Entertainment. Diablo games focus on dungeon exploration, battling monsters, and collecting loot. Players choose a character from a variety of classes (e.g. warrior, mage, archer), then venture into gloomy dungeons and other dark places to search for treasure, fight enemies, and develop their character. Gameplay involves real-time combat and collecting various equipment, weapons, and magical artifacts. The plot of Diablo games often involves fighting against the forces of evil, including demons and the undead. The games in the series are known for their dark and atmospheric environments, as well as high quality graphics and audio design. The Diablo series has a great popularity due to its addictive gameplay, deep character development system and the ability to play in cooperative mode with other players.</p>
+            </div>
+        </div>
+    </div>
+</div>
+     <div class="functions">
+        <form>
+            <input type="radio" id="tab1" name="contact" checked>
+            <label for="tab1">Game versions</label>
+            <table id="tab1" cellspacing="0">
+                <tr>
+                    <td style="font-weight: bold;">Server</td>
+                    <td style="font-weight: bold;">Version</td>
+                </tr>
+                <tr>
+                    <td>Scourge x2</td>
+                    <td>3.3.5a+</td>
+                </tr>
+                <tr style="background-color:rgb(226, 226, 226);">
+                    <td>Algalon x4</td>
+                    <td>3.3.5a</td>
+                </tr>
+                <tr>
+                    <td>Sirus x5</td>
+                    <td>3.3.5a+</td>
+                </tr>
+                <tr style="background-color:rgb(226, 226, 226);">
+                    <td>Soulseeker</td>
+                    <td>3.3.5a+</td>
+                </tr>
+            </table>
+            <input type="radio" id="tab2" name="contact"/>
+            <label for="tab2">Leaderboard</label>
+                <table cellspacing="0">
+                    <tr>
+                        <td style="font-weight: bold;">Nickname</td>
+                        <td style="font-weight: bold;">Rating</td>
+                    </tr>
+                    <tr>
+                        <td>Roin</td>
+                        <td>1824</td>
+                    </tr>
+                    <tr style="background-color:rgb(226, 226, 226);">
+                        <td>Forgiving</td>
+                        <td>1790</td>
+                    </tr>
+                    <tr>
+                        <td>Bespridel</td>
+                        <td>1777</td>
+                    </tr>
+                    <tr style="background-color:rgb(226, 226, 226);">
+                        <td>Thevoid</td>
+                        <td>1776</td>
+                    </tr>
+                </table>
+            <input type="radio" id="tab3" name="contact"/>
+            <label for="tab3">Profile</label>
+                <table cellspacing="0">
+                    <tr>
+                        <td style="font-weight: bold;">Last achievements</td>
+                        <td style="font-weight: bold;">Condition</td>
+                    </tr>
+                    <tr>
+                        <td>Three's Company</td>
+                        <td>Earn a 2200 personal rating in the 3v3 bracket of the arena at level 80.</td>
+                    </tr>
+                    <tr style="background-color:rgb(226, 226, 226);">
+                        <td>Just the Two of Us: 2200</td>
+                        <td>Earn a 2200 personal rating in the 2v2 bracket of the arena at level 80.</td>
+                    </tr>
+                    <tr>
+                        <td>High Five: 2200</td>
+                        <td>Earn a 2200 personal rating in the 5v5 bracket of the arena at level 80.</td>
+                    </tr>
+                    <tr style="background-color:rgb(226, 226, 226);">
+                        <td>Gladiator: Season 8</td>
+                        <td>End a PvP season in the top 0.5% of the arena ladder (requires 50 games won in Season 8).</td>
+                    </tr>
+                </table>
+            <input type="radio" id="tab4" name="contact"/>
+            <label for="tab4">Server online</label>
+                <table cellspacing="0">
+                    <tr>
+                        <td style="font-weight: bold;">Server</td>
+                        <td style="font-weight: bold;">Online</td>
+                    </tr>
+                    <tr>
+                        <td>Scourge x2</td>
+                        <td>4 799</td>
+                    </tr>
+                    <tr style="background-color:rgb(226, 226, 226);">
+                        <td>Algalon x4</td>
+                        <td>1 843</td>
+                    </tr>
+                    <tr>
+                        <td>Sirus x5</td>
+                        <td>9 843</td>
+                    </tr>
+                    <tr style="background-color:rgb(226, 226, 226);">
+                        <td>Soulseeker x1</td>
+                        <td>19 567</td>
+                    </tr>
+                </table>
+        </form>
+<div class="ali" style="margin-top: 500px;">
+<p align="center">Made by Baikadamov Ali</p>
+</div>
+
+    
+</body>
+</html>
+
+
+
+
+
+
+    
